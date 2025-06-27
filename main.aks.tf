@@ -7,7 +7,6 @@ module "aks" {
 
   providers = {
     azurerm = azurerm
-    random  = random
   }
   
 }
