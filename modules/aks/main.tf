@@ -3,11 +3,9 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 3.7.0, < 4.0.0"
     }
     random = {
       source  = "hashicorp/random"
-      version = ">= 3.5.0, < 4.0.0"
     }
   }
 }
@@ -59,4 +57,3 @@ module "avm-ptn-aks-economy" {
   user_assigned_managed_identity_resource_ids = [azurerm_user_assigned_identity.this.id]
   location                                    = module.regions.regions_by_name.westus2.name
 }
-
